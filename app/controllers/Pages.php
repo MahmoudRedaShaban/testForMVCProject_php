@@ -1,19 +1,16 @@
 <?php
 class Pages extends Controller {
-    private $postModel;
 
     public function __construct()
     {
       //  echo " Pages  Loaded";
-      $this->postModel = $this->model("Post");
 
     }
 
     public function index()
     {
-        $posts = $this->postModel->getPosts();
 
-        $this->view("pages/index",["title"=> "TEST Title $$", "posts"=> $posts]); 
+        $this->view("pages/index",["title"=> "[ My MVC TEST PROJECT ]"]); 
     }
 
     public function about()
