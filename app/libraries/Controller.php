@@ -33,6 +33,19 @@ class Controller {
         }
     }
 
+    //Validate of Arrayes Using In Login And Register
+    public function validateFormIsEmpty($data=[] , $keys=[])
+    {
+        foreach($keys as $ky){
+            //Validate $
+            if(empty($data[$ky])){
+                $data[$ky.'_err'] = 'Please Enter  '.$ky;
+            }
+        }
+        return $data;
+    }
+
+
 
 
 }

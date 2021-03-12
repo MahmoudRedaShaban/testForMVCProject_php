@@ -1,4 +1,9 @@
 <?php require_once APPROOT."/views/inc/header.php";?>
-<h1>  <?php  echo $data['title']; ?> </h1>
-<p>This is The MyMvc Framwork Project With PHP . Please refer to the docs on how to use it </p>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container text-center">
+            <h1 class="display-3"> <?php  echo $data['title']; ?></h1>
+            <p class="lead"> <?php  echo $data['desc']; ?></p>
+        </div>
+    </div>
+
 <?php require_once APPROOT."/views/inc/footer.php"; ?>
